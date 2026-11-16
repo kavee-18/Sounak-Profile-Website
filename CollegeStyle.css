@@ -1,0 +1,149 @@
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introimg img{
+    height: 345px;
+    width: 400px;
+}
+.heading h1{
+    color: #B01116;
+    font-family:"Montserrat", sans-serif ;
+    font-size: 40px;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: space-between;
+    background-color: #96000b;
+    border-radius: 15px;
+    padding: 20px;
+   
+     border-left: solid 10px #c6a04a;
+      border-right: solid 10px #c6a04a;
+    gap: 20px;
+}
+.paraimg img{
+    height: 320px;
+    width: 400px;
+    border-radius: 15px;
+}
+.paratext p{
+    color: antiquewhite;
+}
+hr{
+    height: 10px;
+    background-color: #d6b66b;
+}
+
+.academics{
+    background-color: #96000b;
+     border-radius: 15px;
+    padding: 20px;
+    border-top: solid 10px #c6a04a;
+     border-left: solid 10px #c6a04a;
+      border-right: solid 10px #c6a04a;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+}
+.subject{
+    background-color: #c6a04a;
+     border-radius: 15px;
+    padding: 20px;
+    width: 235px;
+}
+.categories{
+    
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     gap: 300px;
+
+}
+.data{
+    background-color: antiquewhite;
+     border-radius: 15px;
+     padding: 20px;
+     margin-top: 20px;
+     margin-bottom: 20PX;
+     height: 65px;
+     width: 200px;
+}
+.data p{
+    text-align: center;
+    color: #B01116;
+}
+.subject p{
+    text-align: center;
+}
+h1{
+      color: #B01116;
+    font-family:"Montserrat", sans-serif ;
+    font-size: 40px;
+}
+#big{
+    color: #c6a04a;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.carousel{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.blocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 110px;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+.blocks:has(.block:hover){
+    animation-play-state: paused;
+}
+.block{
+    background-color: #96000b;
+    border: solid 10px #c6a04a;
+    border-radius: 10px;
+    height: 230px;
+    width: 250px;
+    padding-top: 25px;
+    flex-shrink: 0 ;
+    transition: 0.3s ease ;
+}
+.block:hover{
+    transform: translateY(-10px) scale(1.05);
+}
+.block img{
+    height: 150px;
+    width: 250px;
+}
+.block p{
+    color: antiquewhite;
+    text-align: center;
+    font-family: "Redaction 10", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%
+{
+    transform: translateX(calc(-50% - 55px));
+} 
+}
+#smaller{
+    font-size: 15px;
+}
+
+.blocks a{
+    text-decoration: none;
+}
